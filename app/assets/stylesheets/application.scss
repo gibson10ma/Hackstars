@@ -1,0 +1,24 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+@import "bootstrap"; /* Use this to get all of Bootstrap's @mixins and $variables */
+
+body {
+	background-color:		#fff;
+}
+
+nav ul {
+	list-style:				none;
+}
+
+nav .btn {
+	width:					200px !important;
+	display:				block;
+	margin-bottom:			5px;
+}
+
