@@ -1,2 +1,6 @@
-<%= @hackstar.name %>
-<%= @hackstar.profile %>
+<div id="profile">
+  <%= image_tag @hackstar.image.url :thumb %>
+  <h1><%= @hackstar.name %></h1>
+  <div class="twitter"><%= link_to '@'+@hackstar.twitter, "http://www.twitter.com/#{@hackstar.twitter}", target:"_blank" %></div>
+  <p><%= @hackstar.profile %></p>
+</div>

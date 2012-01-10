@@ -8,10 +8,11 @@
 </head>
 <body>
 	
-	<div class="container">
-	<h1>Welcome to Hackstars</h1>
-	
-	<nav>
+  <div class="container">
+    <header>
+    <a href="/"><%= image_tag "logo.png", id: "logo" %></a>
+    </header>
+  <nav class="well">
 	<ul>
 		<% hackstars.each do |hackstar| %>
 		<li> <%= link_to hackstar.name + ' >', hackstar, { class: "btn primary" } %> </li>
@@ -19,10 +20,15 @@
 	</ul>
 	</nav>
 	
-	<h1 id="name"></h1>
-	
-	<%= yield %>
-	
+
+  <div id="content" class="well">
+    <%= yield %>
+    <div id="profile">
+      <h1 id="name"></h1>
+      <img />
+      <p>
+    </div>
+  </div>
 	</div>
 
 </body>

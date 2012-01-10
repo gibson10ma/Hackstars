@@ -7,7 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-$(function(){
+/*$(function(){
 	$('.btn').click(function(event){
 		event.preventDefault();
 		var stateObj = { foo: "bar" };
@@ -15,7 +15,9 @@ $(function(){
 		$.get(hackstar_url,function(data){
 			console.log(data)
 			$('#name').html(data.name)
+      $('#profile img').attr('src',data.image_thumb_url)
+      $('#profile').hide().fadeIn();
 		})
 		history.pushState(stateObj, "page 2", hackstar_url);
 	});
-})
+})*/
