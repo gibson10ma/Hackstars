@@ -32,4 +32,4 @@ eos
 
 User.create  email: "mason@kissr.co", password: "password", password_confirmation: "password"
 Hackstar.create profile: lorem, name: "Mason Fischer", twitter: "masonforest", email: "mason@kissr.co"
-Hackstar.create profile: lorem, name: "Andrew Nalban", twitter: "andrew", email: "andrew.nalban@gmail.com"
+Hackstar.create profile: lorem, name: "Andrew Nalband", twitter: "nalband", email: "andrew.nalban@gmail.com"
