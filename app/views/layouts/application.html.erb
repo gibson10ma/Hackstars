@@ -8,34 +8,35 @@
 </head>
 <body>
 	
-  <div class="container">
-    <header>
-    <a href="/"><%= image_tag "logo.png", id: "logo" %></a>
-    </header>
-  <nav class="well">
-	<h4>Submit a Work Request:</h4>
-	<ul>
-		<li> <a href="#" class="btn secondary">Submit ></a> </li>
-	</ul>
-	<h4>Meet the hackstars:</h4>
-	<ul>
-		<% hackstars.each do |hackstar| %>
-		<li> <%= link_to hackstar.name + ' >', hackstar, { class: "btn primary" } %> </li>
-		<% end %>
-	</ul>
-	</nav>
+	<div class="background">
+		<div class="container">
+			<header>
+				<a href="/"><%= image_tag "logo.png", id: "logo" %></a>
+			</header>
+			<nav class="well">
+				<h4>Submit a Work Request:</h4>
+				<ul>
+					<li> <a href="#" class="btn secondary">Submit ></a> </li>
+				</ul>
+				<h4>Meet the hackstars:</h4>
+				<ul>
+					<% hackstars.each do |hackstar| %>
+					<li> <%= link_to hackstar.name + ' >', hackstar, { class: "btn primary" } %> </li>
+					<% end %>
+				</ul>
+			</nav>
 	
 
-  <div id="content" class="well">
-    <%= yield %>
-    <div id="profile">
-      <h1 id="name"></h1>
-      <img />
-      <p>
-    </div>
-  </div>
+			<div id="content" class="well">
+			    <%= yield %>
+			    <div id="profile">
+			      <h1 id="name"></h1>
+			      <img />
+			      <p>
+			    </div>
+			</div>
+		</div>
 	</div>
-	
 	<%= render 'layouts/footer'%>
 	
 

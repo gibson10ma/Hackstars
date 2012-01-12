@@ -42,7 +42,12 @@
 }
 
 body {
-  background-color:			#fff;
+  border-top:				3px solid #292929;
+  background-color:			#292929;
+}
+
+.background {
+	background-color:#fff;
 }
 
 #mainImage {
@@ -89,13 +94,14 @@ nav .btn {
 #logo {
   clear: 					both;
   float: 					left;
-  margin-left: 				20px;
+  margin-left: 				85px;
 }
 
 #content {
   float: 					left;
   width: 					560px;
   padding: 					20px;
+  margin-bottom:			50px;
 }
 
 h1 {
@@ -126,5 +132,7 @@ h1 {
 }
 
 footer {
+  color:					#fff;
   text-align: 				center;
+  margin-top:				0px;
 }
