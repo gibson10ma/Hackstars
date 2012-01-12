@@ -45,7 +45,13 @@ body {
 	background-color:		#fff;
 }
 
-header{
+#mainImage {
+  -moz-border-radius:    5px;
+  -webkit-border-radius: 5px;
+  border-radius:         5px;
+}
+
+header {
 overflow: hidden;
 margin-top: 10px;
 margin-bottom: 20px;
@@ -62,13 +68,12 @@ nav h4 {
 	margin-bottom: -15px;
 }
 
-nav{
+nav {
 padding: 0 !important;
 width:					300px !important;
 margin-right: 20px;
 float: left;
 }
-
 
 nav .btn {
   margin: 15px 20px;
@@ -77,19 +82,19 @@ nav .btn {
 	margin-bottom:			5px;
 }
 
-#logo{
+#logo {
   clear: both;
   float: left;
   margin-left: 20px;
 }
+
 #content {
   float: left;
   width: 560px;
   padding: 20px;
- }
+}
 
-
-h1{
+h1 {
   margin-bottom: 10px;
   color:#6d91a3;
   font-size: 30pt;
@@ -102,6 +107,7 @@ h1{
   padding-right: 20px;
   padding-bottom: 20px;
 }
+
 .twitter a{
   color: #0db14b;
   font-size: 20pt;
@@ -110,6 +116,7 @@ h1{
 p{
   clear: left;
 }
+
 #welcome{
   margin-top:10px;
 }
