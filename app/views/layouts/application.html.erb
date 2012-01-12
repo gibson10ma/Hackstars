@@ -13,6 +13,7 @@
     <a href="/"><%= image_tag "logo.png", id: "logo" %></a>
     </header>
   <nav class="well">
+	<h3>Meet the hackstars:</h3>
 	<ul>
 		<% hackstars.each do |hackstar| %>
 		<li> <%= link_to hackstar.name + ' >', hackstar, { class: "btn primary" } %> </li>
