@@ -13,7 +13,11 @@
     <a href="/"><%= image_tag "logo.png", id: "logo" %></a>
     </header>
   <nav class="well">
-	<h3>Meet the hackstars:</h3>
+	<h4>Submit a Work Request:</h4>
+	<ul>
+		<li> <a href="#" class="btn secondary">Submit ></a> </li>
+	</ul>
+	<h4>Meet the hackstars:</h4>
 	<ul>
 		<% hackstars.each do |hackstar| %>
 		<li> <%= link_to hackstar.name + ' >', hackstar, { class: "btn primary" } %> </li>
@@ -31,6 +35,9 @@
     </div>
   </div>
 	</div>
+	
+	<%= render 'layouts/footer'%>
+	
 
 </body>
 </html>
