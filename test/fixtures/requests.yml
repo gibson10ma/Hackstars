@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  company: MyString
+  project: MyString
+  timeframe: MyString
+  description: MyText
+  priority: 1
+
+two:
+  company: MyString
+  project: MyString
+  timeframe: MyString
+  description: MyText
+  priority: 1
