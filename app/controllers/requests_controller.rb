@@ -4,6 +4,12 @@ class RequestsController < ApplicationController
   end
   
   def create
+    @request = Request.new(params[:request])
+    if @request.save 
+      redirect_to requests_path
+    else
+      redirect_to render action: "new"
+    end
   end
   
   def new
