@@ -1,0 +1,9 @@
+<h4>Please fill out this form to submit a work request:</h4><br/>
+
+<%= form_for @request, :url => { :action => "create" }, :html => {:class => "request_form"} do |f| %>
+  <div class="clearfix"><label>Company:</label><div class="input"><%= f.text_field :company %> </div></div>
+  <div class="clearfix"><label>Project Name:</label> <div class="input"><%= f.text_field :project %> </div></div>
+  <div class="clearfix"><label>Ideal Timeframe:</label> <div class="input"><%= f.text_field :timeframe %> </div></div>
+  <div class="clearfix"><label>Project Description:</label> <div class="input"><%= f.text_area :description, :size => "60x12" %> </div></div>
+  <div class="actions"><%= f.submit "Create Request", { class: "btn primary"} %></div>
+<% end %>

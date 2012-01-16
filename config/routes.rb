@@ -2,8 +2,6 @@ Hackstars::Application.routes.draw do
   
   root :to => 'hackstars#index'
   
-  get "request/list"
-  get "request/new"
 
   devise_for :users
 

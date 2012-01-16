@@ -1,7 +1,0 @@
-<%= form_for @request, :url => { :action => "create" }, :html => {:class => "request_form"} do |f| %>
-  <%= f.text_field :company %>
-  <%= f.text_field :project %>
-  <%= f.text_field :timeframe %>
-  <%= f.text_area :description, :size => "60x12" %>
-  <%= f.submit "Create" %>
-<% end %>
