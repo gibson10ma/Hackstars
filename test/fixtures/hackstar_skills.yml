@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  hackstar: 
+  skill: 
+  love: false
+
+two:
+  hackstar: 
+  skill: 
+  love: false
