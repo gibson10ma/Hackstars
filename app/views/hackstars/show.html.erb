@@ -5,6 +5,12 @@
   
   <div id="info">
   	<h2>About:</h2>
-  	<p><%= @hackstar.profile %></p>
+	<code>Ruby on Rails</code>
+		<pre>iOS</pre>
+		<span class="label important">Ruby on Rails</span>
+		<span class="label warning">UX</span>
+		<span class="label notice">iOS</span>
+		
+  	<p><%=raw Maruku.new(@hackstar.profile).to_html %></p>
   </div>
 </div>

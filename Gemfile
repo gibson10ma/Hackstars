@@ -18,6 +18,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'maruku'
 
 # RailsAdmin Installation
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'

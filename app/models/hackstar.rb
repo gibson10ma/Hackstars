@@ -7,6 +7,9 @@ class Hackstar < ActiveRecord::Base
       :access_key_id => ENV['AMAZON_ACCESS_KEY'],
       :secret_access_key => ENV['AMAZON_SECRET_KEY']
     }
+    
+    has_and_belongs_to_many :skills
+    
     def image_url
         self.image.url
     end
