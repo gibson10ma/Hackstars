@@ -4,11 +4,15 @@
   <div class="twitter"><%= link_to '@'+@hackstar.twitter, "http://www.twitter.com/#{@hackstar.twitter}", target:"_blank" %></div>
   
   <div id="info">
-  	<h2>About:</h2>
-		<span class="label important">Ruby on Rails</span>
-		<span class="label warning">UX</span>
+	
+  	<h2>Skills:</h2>
+		<span class="label notice">UX <span style="color:#ff6e6e;">♥</span></span>
+		<span class="label notice">Videography <span style="color:#ff6e6e;">♥</span></span>
+		<span class="label notice">Front End Design <span style="color:#ff6e6e;">♥</span></span>
 		<span class="label notice">iOS</span>
-		
+		<span class="label notice">Ruby on Rails</span>
+		<p><span style="color:#ff6e6e;">♥</span> = Work I love!</p>
+  	<h2>About:</h2>
   	<p><%=raw Maruku.new(@hackstar.profile).to_html %></p>
   </div>
 </div>
