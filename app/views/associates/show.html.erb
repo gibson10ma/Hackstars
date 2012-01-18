@@ -1,0 +1,10 @@
+<div id="profile">
+  <%= image_tag @associate.image.url :thumb %>
+  <h1><%= @associate.name %></h1>
+  <div class="twitter"><%= link_to '@'+@associate.twitter, "http://www.twitter.com/#{@associate.twitter}", target:"_blank" %></div>
+  
+  <div id="info">
+  	<h2>About:</h2>
+  	<p><%=raw Maruku.new(@associate.profile).to_html %></p>
+  </div>
+</div>

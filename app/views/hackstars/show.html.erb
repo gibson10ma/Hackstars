@@ -6,12 +6,21 @@
   <div id="info">
 	
   	<h2>Skills:</h2>
-		<span class="label notice">UX <span style="color:#ff6e6e;">♥</span></span>
-		<span class="label notice">Videography <span style="color:#ff6e6e;">♥</span></span>
-		<span class="label notice">Front End Design <span style="color:#ff6e6e;">♥</span></span>
+		<% @hackstar.hackstar_skills.each do |hackstar_skill| %>
+		<span class="label notice">
+		<%= hackstar_skill.skill.name %>
+			<% if hackstar_skill.love? %> 
+				&nbsp;<span style="font-size:120%; color:#ff9898;">♥</span>
+			<% end %>
+		</span>&nbsp;
+		<% end %>
+		
+		<!-- UX <span style="color:#ff9898;">♥</span>
+		<span class="label notice">Videography <span style="color:#ff9898;">♥</span></span>
+		<span class="label notice">Front End Design <span style="color:#ff9898;">♥</span></span>
 		<span class="label notice">iOS</span>
 		<span class="label notice">Ruby on Rails</span>
-		<p><span style="color:#ff6e6e;">♥</span> = Work I love!</p>
+		<p><span style="color:#ff6e6e;">♥</span> = Work I love!</p> -->
   	<h2>About:</h2>
   	<p><%=raw Maruku.new(@hackstar.profile).to_html %></p>
   </div>

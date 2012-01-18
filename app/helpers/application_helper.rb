@@ -3,6 +3,10 @@ module ApplicationHelper
     Hackstar.all
   end
   
+  def associates
+    Associate.all
+  end
+  
   def requests
     Request.all
   end

@@ -18,10 +18,16 @@
 				<ul>
 					<li> <%= link_to 'Submit >', new_request_path, { class: "btn secondary" } %> </li>
 				</ul>
-				<h4>Meet the hackstars:</h4>
+				<h4>Meet the Hackstars:</h4>
 				<ul>
 					<% hackstars.each do |hackstar| %>
 					<li> <%= link_to hackstar.name + ' >', hackstar, { class: "btn primary" } %> </li>
+					<% end %>
+				</ul>
+				<h4>Meet the Associates:</h4>
+				<ul>
+					<% associates.each do |associate| %>
+					<li> <%= link_to associate.name + ' >', associate, { class: "btn primary" } %> </li>
 					<% end %>
 				</ul>
 			</nav>

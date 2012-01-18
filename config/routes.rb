@@ -7,6 +7,7 @@ Hackstars::Application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
+  resources :associates
   resources :hackstars
   resources :requests
 
