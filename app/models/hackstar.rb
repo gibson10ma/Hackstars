@@ -2,6 +2,7 @@ class Hackstar < ActiveRecord::Base
   has_attached_file :image, 
     :styles => { :medium => "300x300>", :thumb => "100x100>" },
     :storage => :s3,
+    :default_url => 'assets/missing.png',
     :bucket => 'hackstars',
     :s3_credentials => {
       :access_key_id => ENV['AMAZON_ACCESS_KEY'],
