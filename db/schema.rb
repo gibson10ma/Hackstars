@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120117213903) do
+ActiveRecord::Schema.define(:version => 20120118161632) do
+
+  create_table "hackstar_skills", :force => true do |t|
+    t.integer  "hackstar_id"
+    t.integer  "skill_id"
+    t.boolean  "love"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "hackstar_skills", ["hackstar_id"], :name => "index_hackstar_skills_on_hackstar_id"
+  add_index "hackstar_skills", ["skill_id"], :name => "index_hackstar_skills_on_skill_id"
 
   create_table "hackstars", :force => true do |t|
     t.text     "profile"
