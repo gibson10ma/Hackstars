@@ -1,7 +1,7 @@
 <div id="profile">
   <%= image_tag @hackstar.image.url :thumb %>
   <h1><%= @hackstar.name %></h1>
-  <div class="twitter"><%= link_to '@'+@hackstar.twitter, "http://www.twitter.com/#{@hackstar.twitter}", target:"_blank" %></div>
+  <div class="twitter"><%=  if not @hackstar.twitter.blank?  then link_to '@' + @hackstar.twitter, "http://www.twitter.com/#{@hackstar.twitter}", target:"_blank" end%></div>
   
   <div id="info">
 	
@@ -21,3 +21,8 @@
   	<p><%=raw Maruku.new(@hackstar.profile).to_html %></p>
   </div>
 </div>
+
+
+if @hackstar.twitter
+	'@'
+	
