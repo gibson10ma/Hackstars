@@ -14,6 +14,8 @@
 				<a href="/"><%= image_tag "logo.png", id: "logo" %></a>
 			</header>
 			<nav class="well">
+				<h4>View the TechStars Facebook</h4>
+					<%= link_to "TechStars Facebook" + ' >', "http://hackstars.herokuapp.com/facestars/", { class: "btn secondary" } %>
 				<h4>Meet the Hackstars:</h4>
 				<ul>
 					<% hackstars.each do |hackstar| %>
