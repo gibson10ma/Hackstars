@@ -1,0 +1,34 @@
+/*body {
+	background-image:url('bg.jpg');
+}*/
+
+.media-grid a {
+	background-color: #fff;
+	margin-bottom:40px;
+	text-align:right;
+}
+
+.teamName {
+	margin-left:20px;
+}
+
+.thumbnail {
+}
+
+.name {
+	color:		#404040;
+	margin-right:	4px;
+	margin-top:4px;
+	line-height: 24px;
+}
+
+.nameWhite {
+	color:		#fff;
+	margin-right:	4px;
+	margin-top:4px;
+	line-height: 24px;
+}
+
+a:hover{
+	text-decoration:none;
+}
